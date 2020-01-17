@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* background-image: url("img/background.png"); */
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-image: url(img/bg.svg);
+}
+
+body {
+  font-family: serif;
+}
+
+.text {
+  padding: 8% 60% 0% 13%;
+  color: white;
+}
+
+p {
+  font-size: 1.2em;
+  padding-top: 1em;
+}
+
+.plush {
+  display: inline-block;
+  position: relative;
+  bottom: 2em;
+  left: 45em;
+}
+
+img {
+  height: 450px;
+}
