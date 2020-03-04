@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(249, 253, 246);
+}
+
+.lights,
+.numbers {
+  border: black 3px solid;
+  background-color: rgb(14, 39, 0);
+}
+
+.numbers {
+  height: 306px;
+  width: 150px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  height: 150px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 4em;
+  margin: 0;
+}
+
+.stop.go {
+  background-image: url("/img/stop-on.svg");
+  background-color: red;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+}
+
+.walk.go {
+  background-image: url("/img/walk-off.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+}
+
+.stop.stay {
+  background-image: url("/img/stop-off.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+}
+
+.walk.stay {
+  background-image: url("/img/walk-on.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 150px;
+  width: 150px;
+}
