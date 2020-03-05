@@ -1,37 +1,38 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const btnCalc = document.querySelector("#calc__btn");
-  const text = document.querySelector(".calc__text");
-  const result = document.querySelector(".calc__result");
-  btnCalc.addEventListener("click", () => {
-    result.value = Number(result.value) + Number(text.value);
-    text.value = "";
+  const padlock = document.querySelector(".padlock");
+  const text = document.querySelector(".text");
+
+  padlock.addEventListener("mouseleave", () => {
+    text.style.display = "none";
+  });
+  padlock.addEventListener("mouseenter", () => {
+    text.style.display = "block";
   });
 });
 
-// const validation = () => {
-//   const user = document.querySelector("#username");
-//   const pass = document.querySelector("#password");
-//   if (user.value == "Iubi" && pass.value == "020919") {
-//     document.write("Good baby!");
-//   } else {
-//     document.write("Nice try, you're not Iubi!");
-//   }
-// };
+// mouseenter           text is diplayed
 
-// const showMessage = () => {
-//   const textInput = document.querySelector('#textInput');
-//   const buttonInput = document.querySelector("#buyButton");
-//   buttonInput.className = "cart";
-//   buttonInput.textContent = textInput.value + ' Bouquets in Cart';
+// mouseleave           text is hidden
 
-//   // alert("Product added to cart");
-// };
+// Attach these events to the padlock element on the document's DOMContentLoaded event inside your index.js.
 
-// const msg = document.querySelector("#message");
-// msg.textContent = "Hello, Sweetie";
-// msg.style.color = "pink";
+// Martin's solution
+// document.addEventListener('DOMContentLoaded', () => {
+// const padlock = document.querySelector('#padlock');
+// const message = document.querySelector('#message');
 
-// const header = document.querySelector(".header");
-// // header.style.backgroundColor = "hotpink";
-// header.style.padding = "5rem";
-// header.style.margin = "0";
+// padlock.addEventListener("mouseleave", () => {
+//   message.className = 'message hidden'
+// OR use message.classList.add('hidden')
+// });
+// padlock.addEventListener("mouseenter", () => {
+//   message.className = 'message'
+// >>OR use message.classList.remove('hidden')
+// >>OR use message.classList.toggle('hidden')
+// });
+// });
+
+// Toggle will remove/add on/off> from previous state to other state.
+
+// IN CSS:
+// .hidden {opacity: 0;}
