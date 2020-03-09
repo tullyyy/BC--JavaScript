@@ -1,0 +1,138 @@
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  margin: 2em 0;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: initial;
+  height: 100%;
+  width: 30%;
+  background-color: white;
+  border-radius: 10px;
+  padding: .5em;
+}
+
+
+.unicornFull {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.unicorn {
+  background-color: rgb(15, 15, 226);
+  ;
+  border-radius: 10px;
+  /* height: 20%; */
+  /* width: 55%;
+  margin: .5em 0;
+  padding: 1em;
+  color: white;
+}
+
+.cleverbotFull {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.cleverbot {
+  background-color: lightgrey;
+  border-radius: 10px;
+  /* height: 20%; */
+  /* width: 55%;
+  margin: .5em 0;
+  padding: 1em;
+}
+
+.robo {
+  height: 2.5em;
+  width: 2.5em;
+  margin: .3em;
+  /* margin-right: .5em; */
+  /* z-index: 1;
+}
+
+.uni {
+  height: 2.5em;
+  width: 2.5em;
+  margin: .3em;
+  /* margin-left: .5em; */
+  /* z-index: 1; */ 
+/* }  */ 
+
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+body {
+  background: #555;
+}
+
+.chat {
+  width: 25rem;
+  background: white;
+  margin: 4rem auto;
+  border-radius: 4px;
+  min-height: 4rem;
+  padding: 1rem;
+}
+
+.message {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.message--remote {
+  flex-direction: row;
+}
+
+.message--local {
+  flex-direction: row-reverse;
+}
+
+.message__head {
+  flex: 0 0 auto;
+  width: 3rem;
+  height: 3rem;
+}
+
+.message__text {
+  flex: 0 0 auto;
+  max-width: 14rem;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.message--local .message__text {
+  background: blue;
+  color: white;
+}
+
+.message--remote .message__text {
+  background: #ddd;
+}
