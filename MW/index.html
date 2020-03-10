@@ -6,37 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <title>MW Sliding Sidebar</title>
+  <title>Progress</title>
 </head>
 
 <body>
-  <aside class="fullSidebar">
-    <div class="slider">
-      <img src="menu.svg" alt="menu icon">
-
-      <div class="menu">
-        <ul>
-          <h2>Menu</h2>
-          <li><a href="#"></a>Lorem Ipsum</li>
-          <li><a href="#"></a>dolor sit amet</li>
-          <li><a href="#"></a>consectetur adipisicing elit</li>
-          <li><a href="#"></a>Mauris mollis enim</li>
-          <li><a href="#"></a>Porta blandit</li>
-        </ul>
-      </div>
+  <div id="label" class="label">
+    <span id="counter">4</span>/<span id="maximum">10</span>
+  </div>
+  <div class="progress">
+    <div id="minus" class="btn-minus"></div>
+    <div class="bar">
+      <div id="knob" class="knob"></div>
     </div>
-  </aside>
-  <main>
-    <h1>Article</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iure ullam reprehenderit accusamus perspiciatis
-      eligendi atque dolore labore rerum facere! Distinctio iure eum similique temporibus voluptatibus explicabo
-      aspernatur asperiores expedita.</p>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi temporibus qui cum fuga quam nesciunt, cumque
-      laborum error accusamus deleniti quod impedit? Cupiditate eius autem quasi itaque excepturi! Quam, sit.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laboriosam nihil fuga laudantium obcaecati
-      accusantium libero quibusdam amet velit vel. A ratione maxime fugiat architecto animi quibusdam accusamus odio
-      dolor?</p>
-  </main>
+    <div id="plus" class="btn-plus"></div>
+  </div>
+
+
+  <div class="app"></div>
   <script src="index.js"></script>
 </body>
 
